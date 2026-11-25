@@ -2,36 +2,48 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Benim Sitem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taha Hakan'ın Dünyası</title>
 <style>
-  body {
-    margin: 0;
-    height: 100vh;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .kutu {
-    background: rgba(255, 255, 255, 0.75);
-    padding: 30px;
-    border-radius: 20px;
-  }
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#4db2e8;min-height:100vh;position:relative;overflow-x:hidden}
+.sun{position:fixed;top:20px;left:20px;width:110px;height:110px;background:#ffc93c;border-radius:50%;box-shadow:0 0 0 15px rgba(255,201,60,.35);z-index:0}
+.cloud{position:fixed;background:#fff;border-radius:50px;padding:20px 40px;z-index:0;opacity:.95}
+.cloud1{top:60px;left:30%}.cloud2{top:40px;right:10%}
+.balloon{position:fixed;top:120px;right:60px;font-size:60px;z-index:0}
+.grass{position:fixed;bottom:0;left:0;right:0;height:180px;background:#3db83d;z-index:0;border-top:10px solid #4ec94e}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:90px 20px 220px;text-align:center}
+.card{background:#fff;border:4px solid #ffb300;border-radius:25px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.15);margin-bottom:30px}
+.badge{background:#e85d04;color:#fff;padding:8px 18px;border-radius:20px;display:inline-block;font-weight:bold}
+h1{color:#1a2a6c;font-size:32px;margin:15px 0}
+p{color:#444;line-height:1.6;font-size:17px}
+.btn{display:inline-block;background:#1a9e4a;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:20px;font-size:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{background:#fff;border:3px solid #ff8a00;border-radius:20px;padding:25px}
+.box h2{font-size:20px;margin:12px 0}
+.box p{font-size:15px}
+.btn-red{background:#e63b12}.btn-blue{background:#0a6fc2}
+.topbtn{display:inline-block;background:#fff;border:2px solid #ddd;padding:8px 18px;border-radius:20px;text-decoration:none;color:#333;font-weight:bold;margin-bottom:15px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
 </style>
 </head>
 <body>
-
-  <div class="kutu">
-    <h1>Merhaba 👋</h1>
-    <p>Benim kişisel siteme hoş geldin</p>
-  </div>
-
+<div class="sun"></div><div class="cloud cloud1"></div><div class="cloud cloud2"></div><div class="balloon">🎈</div><div class="grass"></div>
+<div class="wrap">
+<a class="topbtn" href="#">🏠 Ana Sayfaya Dön</a>
+<div class="card">
+<span class="badge">🎉 Hoş Geldiniz!</span>
+<h1>Merhaba! Ben Taha Hakan</h1>
+<p>Renkli dünyama hoş geldin! Burada en sevdiğim oyunları, yaptığım resimleri, harika maceralarımı ve keşfettiğim yeni şeyleri paylaşıyorum. Eğlenceye ve yeni şeyler öğrenmeye hazırsan, hadi birlikte keşfe çıkalım!</p>
+<a class="btn" href="#kesfet">Keşfetmeye Başla 🚀</a>
+</div>
+<div id="kesfet">
+<div class="card"><h1>🌟 Taha Hakan'ın Dünyasını Keşfet!</h1><p>Aşağıdaki renkli kutulardan birini seç ve maceraya başla!</p></div>
+<div class="grid">
+<div class="box"><div style="font-size:50px">🎨</div><h2>Resimlerim & Çizimlerim</h2><p>Kendi ellerimle çizdiğim rengarenk resimler ve boyamalarım burada!</p><a class="btn btn-red" href="#">Galeriye Git →</a></div>
+<div class="box"><div style="font-size:50px">🚀</div><h2>Maceralarım & Gezilerim</h2><p>Gittiğim harika yerler, doğa keşiflerim ve en eğlenceli anılarım.</p><a class="btn btn-blue" href="#">Anılara Bak →</a></div>
+</div>
+</div>
+</div>
 </body>
 </html>
