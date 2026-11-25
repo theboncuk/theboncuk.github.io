@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://127.0.0.1:3000/tahahakan/sitemap.xml
+Sitemap: https://theboncuk.github.io/sitemap.xml
